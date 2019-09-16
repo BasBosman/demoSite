@@ -40,7 +40,7 @@ public class Account {
 		this.woonplaats = woonplaats;
 		this.email = email;
 		
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy", Locale.ENGLISH);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy",Locale.ENGLISH);
 		LocalDate date = LocalDate.now();
 		
 		this.aanmaakdatum = formatter.format(date);

@@ -42,7 +42,8 @@ public class AccountService {
 	
 	@PostConstruct
 	public void initPersonen() {
-		Account john  = accountRepository.save(new Account("John", HashWachtwoord.md5("john"), "Amsterdam", "email1"));
+		
+		Account john  = accountRepository.save(new Account("John", HashWachtwoord.md5("john"), "Amsterdam", "email1@gmail.pk"));
 	}
 	
 }
